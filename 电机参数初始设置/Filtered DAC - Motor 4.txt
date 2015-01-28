@@ -1,0 +1,39 @@
+Close
+Delete Gather
+
+
+I402 = $7801A			;Command Output Address
+I7000 = 1001 			;PWM frequency 29.4kHz, PWM 1-4
+I7001 = 5 			;Phase Clock 9.8kHz
+I7002 = 3 			;Servo frequency 2.45kHz
+I7003 = 1746 			;ADC frequency
+I7100 = 1001 			;PWM frequency 29.4kHz, PWM 5-8
+I7103 = 1746 			;ADC frequency
+I7046 = 0 			;Output mode: PWM
+I469 = 1001 			;DAC limit 10Vdc
+I10 = 3421867 			;Servo interrupt time
+
+;Position Feedback
+I7040 = 7   			;Closed loop, X4 CCW
+
+;Example PID Gains
+I430=700			;P gain = default
+I431=1280			;D gain = default
+I432=1280			;VFF = default
+I433=0				;I gain = default
+I434=1				;I mode = default
+I435=0				;AFF = default
+
+
+I400=1				;To activate motor
+
+
+Open PLC 1 Clear
+
+#4j/				;Enable Motor #1 servo Loop
+
+
+
+Close
+
+

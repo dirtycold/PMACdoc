@@ -1,0 +1,40 @@
+Close
+Delete Gather
+
+
+I102 = $78002			;Command Output Address
+I7000 = 1001 			;PWM frequency 29.4kHz, PWM 1-4
+I7001 = 5 			;Phase Clock 9.8kHz
+I7002 = 3 			;Servo frequency 2.45kHz
+;I7002 = 2 			;Servo frequency 3.26kHz
+I7003 = 1746 			;ADC frequency
+I7100 = 1001 			;PWM frequency 29.4kHz, PWM 5-8
+I7103 = 1746 			;ADC frequency
+I7016 = 0 			;Output mode: PWM
+I169 = 1001 			;DAC limit 10Vdc
+I10 = 3421867 			;Servo interrupt time
+
+;Position Feedback
+I7010 = 7   			;Closed loop, X4 CCW
+
+;Example PID Gains
+I130=700			;P gain = default
+I131=1280			;D gain = default
+I132=1280			;VFF = default
+I133=0				;I gain = default
+I134=1				;I mode = default
+I135=0				;AFF = default
+
+
+I100=1				;To activate motor
+
+
+Open PLC 1 Clear
+
+#1j/				;Enable Motor #1 servo Loop
+
+
+
+Close
+
+

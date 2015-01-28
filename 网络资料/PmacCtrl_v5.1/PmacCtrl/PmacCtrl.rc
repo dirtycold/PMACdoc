@@ -1,0 +1,385 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PmacCtrl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PmacCtrl.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PmacCtrl"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PmacCtrl 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2004\tWenph",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PMACCTRL_DIALOG DIALOGEX 0, 0, 481, 314
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "User_Interface"
+MENU IDR_MENU
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "轨迹选择",IDC_STATIC,8,36,78,27
+    COMBOBOX        IDC_COMBO_CHOICE,11,46,70,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "默认(&D)",IDC_DEFAULT,96,44,40,14
+    GROUPBOX        "直线参数",IDC_STATIC,8,71,140,115
+    GROUPBOX        "起点",IDC_STATIC,159,81,67,99
+    EDITTEXT        IDC_SX_EDIT,38,89,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SY_EDIT,38,107,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SZ_EDIT,38,125,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SA_EDIT,38,143,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SB_EDIT,38,161,33,15,ES_AUTOHSCROLL
+    LTEXT           "S-X:",IDC_STATIC,17,93,20,12
+    LTEXT           "S-Y:",IDC_STATIC,17,110,20,12
+    LTEXT           "S-Z:",IDC_STATIC,17,127,20,12
+    LTEXT           "S-A:",IDC_STATIC,17,144,20,12
+    LTEXT           "S-B:",IDC_STATIC,17,161,20,12
+    GROUPBOX        "终点",IDC_STATIC,80,81,63,99
+    EDITTEXT        IDC_EX_EDIT,106,89,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EY_EDIT,106,107,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EZ_EDIT,106,125,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EA_EDIT,106,143,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EB_EDIT,106,161,33,15,ES_AUTOHSCROLL
+    LTEXT           "E-X:",IDC_STATIC,84,93,16,13
+    LTEXT           "E-Y:",IDC_STATIC,84,110,20,12
+    LTEXT           "E-Z:",IDC_STATIC,84,127,20,12
+    LTEXT           "E-A:",IDC_STATIC,84,144,20,12
+    LTEXT           "E-B:",IDC_STATIC,84,161,20,12
+    GROUPBOX        "圆参数/螺旋线参数",IDC_STATIC,154,71,148,115
+    GROUPBOX        "起点",IDC_STATIC,13,81,63,99
+    EDITTEXT        IDC_SR_EDIT,188,89,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SANG_EDIT,188,107,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCPX_EDIT,188,125,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCPY_EDIT,188,143,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCPZ_EDIT,188,161,33,15,ES_AUTOHSCROLL
+    LTEXT           "S-R:",IDC_STATIC,163,93,23,12
+    LTEXT           "S-Ang:",IDC_STATIC,163,110,23,12
+    LTEXT           "S-CPX:",IDC_STATIC,163,127,23,12
+    LTEXT           "S-CPY:",IDC_STATIC,163,144,23,12
+    LTEXT           "S-CPZ:",IDC_STATIC,163,161,23,12
+    GROUPBOX        "终点",IDC_STATIC,230,81,67,99
+    EDITTEXT        IDC_ER_EDIT,259,89,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EANG_EDIT,259,107,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECPX_EDIT,259,125,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECPY_EDIT,259,143,33,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECPZ_EDIT,259,161,33,15,ES_AUTOHSCROLL
+    LTEXT           "E-R:",IDC_STATIC,234,93,23,12
+    LTEXT           "E-Ang:",IDC_STATIC,234,110,23,12
+    LTEXT           "E-CPX:",IDC_STATIC,234,127,23,12
+    LTEXT           "E-CPY:",IDC_STATIC,234,144,23,12
+    LTEXT           "E-CPZ:",IDC_STATIC,234,161,23,12
+    PUSHBUTTON      "保存(&S)",IDC_SAVE,149,44,40,14
+    PUSHBUTTON      "确定(&O)",IDC_CONFIRM,202,44,40,14
+    GROUPBOX        "机床操作",IDC_STATIC,8,191,294,31
+    PUSHBUTTON      "初始化PMAC",IDC_INITIAL,13,201,50,15
+    PUSHBUTTON      "机床归零",IDC_ZERO,71,201,50,15
+    PUSHBUTTON      "零点偏移",IDC_EXCURSION,129,201,50,15
+    PUSHBUTTON      "文件下载",IDC_LOADFILE,187,201,50,15
+    PUSHBUTTON      "执行程序",IDC_EXECUTE,245,202,50,15
+    GROUPBOX        "查看数据",IDC_STATIC,134,229,168,31
+    PUSHBUTTON      "查看插补数据",IDC_VIEW_INTERPOLATION,139,239,75,15
+    PUSHBUTTON      "查看逆解数据",IDC_VIEW_INVKINE,220,239,75,15
+    PUSHBUTTON      "导出构型参数",IDC_OUTPUTPARA,317,170,70,13
+    PUSHBUTTON      "显示构型图例",IDC_Show_BUTTON,397,169,70,13
+    PUSHBUTTON      "退出(&X)",IDC_EXIT,255,44,40,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,8,
+                    269,294,16
+    GROUPBOX        "",IDC_STATIC,90,36,212,27
+    GROUPBOX        "NC代码控制",IDC_STATIC,8,229,120,31
+    PUSHBUTTON      "载入NC代码",IDC_LOADNC,13,239,50,15
+    PUSHBUTTON      "自动运行",IDC_AUTOEXECUTE,71,239,50,15
+    GROUPBOX        "时间－日期",IDC_STATIC,311,5,161,27
+    EDITTEXT        IDC_TIME_EDIT,317,15,149,13,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "构型选择",IDC_STATIC,8,5,294,27
+    CONTROL         "构型－1",IDC_Structure1_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,19,17,44,10
+    CONTROL         "构型－2",IDC_Structure2_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,77,17,44,10
+    CONTROL         "构型－3",IDC_Structure3_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,135,17,44,10
+    CONTROL         "构型－4",IDC_Structure4_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,193,17,44,10
+    CONTROL         "构型－5",IDC_Structure5_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,251,17,44,10
+    GROUPBOX        "机床位置反馈参数",IDC_STATIC,311,36,161,126
+    EDITTEXT        IDC_AXIS6_EDIT,352,49,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AXIS5_EDIT,352,67,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AXIS2_EDIT,352,85,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AXIS1_EDIT,352,103,33,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_AXIS4_EDIT,352,121,33,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_AXIS3_EDIT,352,140,33,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Axis6:",IDC_STATIC,320,53,24,9
+    LTEXT           "Axis5:",IDC_STATIC,320,71,24,9
+    LTEXT           "Axis2:",IDC_STATIC,320,89,24,9
+    LTEXT           "Axis1:",IDC_STATIC,320,107,24,9
+    LTEXT           "Axis4:",IDC_STATIC,320,125,24,9
+    LTEXT           "Axis3:",IDC_STATIC,320,143,24,9
+    EDITTEXT        IDC_PX_EDIT,429,49,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PY_EDIT,429,67,33,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PZ_EDIT,429,85,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PA_EDIT,429,103,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PB_EDIT,429,121,33,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PC_EDIT,429,140,33,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "P-X:",IDC_STATIC,407,53,16,9
+    LTEXT           "P-Y:",IDC_STATIC,407,71,16,9
+    LTEXT           "P-Z:",IDC_STATIC,407,89,16,9
+    LTEXT           "P-A:",IDC_STATIC,407,107,16,9
+    LTEXT           "P-B:",IDC_STATIC,407,125,16,9
+    LTEXT           "P-C:",IDC_STATIC,407,143,16,9
+    GROUPBOX        "构型参数显示",IDC_STATIC,311,191,161,116
+    EDITTEXT        IDC_StructurePara_EDIT,316,201,151,102,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,396,43,1,115
+    GROUPBOX        "",IDC_STATIC,311,161,161,25
+    LTEXT           "",IDC_INFO,8,294,294,9
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PmacCtrl Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PmacCtrl\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PmacCtrl.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PmacCtrl 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PMACCTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 478
+        BOTTOMMARGIN, 310
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)",                    ID_FILE_NEW
+        MENUITEM "打开(&O)",                    ID_FILE_OPEN
+        MENUITEM "保存(&S)",                    ID_FILE_SAVE
+        MENUITEM "另存为(&A)",                  ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "默认数据(&D)",                ID_FILE_DEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_FILE_EXIT
+    END
+    POPUP "控制(&C)"
+    BEGIN
+        MENUITEM "数据处理(&P)",                ID_CTRL_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "初始化PMAC(&R)",              ID_CTRL_INITIAL
+        MENUITEM "机床归零(&Z)",                ID_CTRL_ZERO
+        MENUITEM "零点偏移(&X)",                ID_CTRL_EXCURSION
+        MENUITEM SEPARATOR
+        MENUITEM "文件下载(&D)",                ID_CTRL_LOADFILE
+        MENUITEM "执行程序(&E)",                ID_CTRL_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "载入NC代码(&N)",              ID_CTRL_LOADNC
+        MENUITEM "自动运行(&A)",                ID_CTRL_AUTOEXECUTE
+        MENUITEM SEPARATOR
+        POPUP "查看数据(&V)"
+        BEGIN
+            MENUITEM "查看逆解数据(&K)",            ID_CTRL_VIEW_INVKINE
+            MENUITEM "查看插补数据(&I)",            ID_CTRL_VIEW_INTERPOLATION
+
+        END
+        MENUITEM "导出构型参数(&O)",            ID_CTRL_OUTPUTPARA
+        MENUITEM "显示构型图例(&S)",            ID_CTRL_OUTPUTPHOTO
+    END
+    POPUP "构型(&T)"
+    BEGIN
+        MENUITEM "构型一(&O)",                  ID_STRUCTURE_ONE
+        MENUITEM SEPARATOR
+        MENUITEM "构型二(&T)",                  ID_STRUCTURE_TWO
+        MENUITEM SEPARATOR
+        MENUITEM "构型三(&R)",                  ID_STRUCTURE_THREE
+        MENUITEM SEPARATOR
+        MENUITEM "构型四(&F)",                  ID_STRUCTURE_FOUR
+        MENUITEM SEPARATOR
+        MENUITEM "构型五(&V)",                  ID_STRUCTURE_FIVE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)",                    ID_HELP_ABOUT
+        MENUITEM "帮助(&H)",                    ID_HELP_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PmacCtrl(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PmacCtrl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
